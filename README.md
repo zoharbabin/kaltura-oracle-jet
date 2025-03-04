@@ -153,7 +153,9 @@ Developers can extend or customize the Kaltura Player component in several ways:
 
 ## License
 
-The Kaltura Component Code is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+The Kaltura Component Code (under [`/src/ts/jet-composites/kaltura/player`](./src/ts/jet-composites/kaltura/player)) is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+The rest is the default Oracle JET Exmaple Project that you get when executing `❯ npx @oracle/ojet-cli create JET_Web_Application --template=navdrawer --typescript`
+
 
 ---
 
