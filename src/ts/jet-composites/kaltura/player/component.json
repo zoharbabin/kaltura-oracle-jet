@@ -1,0 +1,98 @@
+{
+  "pack": "kaltura",
+  "name": "player",
+  "version": "1.0.0",
+  "jetVersion": "^16.0.0",
+  "displayName": "Kaltura Player",
+  "description": "A self-contained Oracle JET composite that automatically loads and embeds the Kaltura Player.",
+  "properties": {
+    "domain": {
+      "type": "string",
+      "value": "cdnapisec.kaltura.com"
+    },
+    "partnerId": {
+      "type": "number",
+      "value": 2421271
+    },
+    "uiConfId": {
+      "type": "number",
+      "value": 56335032
+    },
+    "mediaId": {
+      "type": "string",
+      "value": "1_71gyojxl"
+    },
+    "mode": {
+      "type": "string",
+      "enumValues": ["regular", "interactive"],
+      "value": "regular"
+    },
+    "playback": {
+      "type": "object",
+      "properties": {
+        "autoplay": {
+          "type": "boolean",
+          "value": false
+        },
+        "preload": {
+          "type": "string",
+          "value": "auto"
+        }
+      }
+    },
+    "provider": {
+      "type": "object",
+      "properties": {
+        "partnerId": {
+          "type": "number",
+          "value": 2421271
+        },
+        "uiConfId": {
+          "type": "number",
+          "value": 56335032
+        }
+      }
+    },
+    "log": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "type": "string",
+          "value": "ERROR"
+        },
+        "playerVersion": {
+          "type": "boolean",
+          "value": false
+        }
+      }
+    },
+    "rapt": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "boolean",
+          "value": false
+        },
+        "bufferNextNodes": {
+          "type": "boolean",
+          "value": true
+        },
+        "showScrubber": {
+          "type": "boolean",
+          "value": false
+        },
+        "showTimers": {
+          "type": "boolean",
+          "value": true
+        },
+        "showSettings": {
+          "type": "boolean",
+          "value": true
+        }
+      }
+    }
+  },
+  "events": {
+    "playerEvent": {}
+  }
+}

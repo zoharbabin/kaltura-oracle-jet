@@ -1,0 +1,8 @@
+/* The player container will fill the custom element completely.
+    It respects any styles the host sets (or that the consuming app overrides). */
+.kaltura-player-container {
+  width: 100%;
+  height: 100%;
+  /* Ensure the player container adapts to its parent's dimensions */
+  box-sizing: border-box;
+}

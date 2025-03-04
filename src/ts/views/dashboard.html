@@ -1,0 +1,66 @@
+<style>
+  /* Flex container for the two player wrappers */
+  .players-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch; /* Ensures wrappers all share the same height */
+      gap: 20px; /* Adjust spacing between players as needed */
+      flex-wrap: wrap; /* Wrap if the viewport is too narrow */
+  }
+
+  /* Each player container maintains a 16:9 aspect ratio */
+  .player-wrapper {
+      flex: 1;
+      aspect-ratio: 16 / 9; /* Maintains a 16:9 ratio */
+      background: var(--color-black);
+      border: 2px solid var(--color-primary);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+  }
+
+  /* Make sure the kaltura-player fills its container */
+  .player-wrapper kaltura-player {
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+
+  .kaltura-player-comp {
+      width: 100%;
+      height: 100%;
+  }
+</style>
+
+<div class="oj-hybrid-padding">
+  <h1>Showcase Kaltura Player Embeds in Oracle JET</h1>
+  <section class="player-section">
+    <div class="players-container">
+
+      <div class="player-wrapper">
+        <!-- Regular mode player -->
+        <kaltura-player 
+          id="kalturaPlayerRegular"
+          domain="cdnapi-ev.kaltura.com"
+          playback.autoplay="false"
+          partner-id="2421271"
+          ui-conf-id="56349762"
+          media-id="1_yknnqmh9"
+          mode="regular"> 
+        </kaltura-player>
+      </div>
+      
+      <div class="player-wrapper">
+        <!-- Interactive mode player -->
+        <kaltura-player 
+          id="kalturaPlayerInteractive"
+          domain="cdnapi-ev.kaltura.com"
+          partner-id="2421271"
+          ui-conf-id="56349762"
+          media-id="1_zxnf9ha7"
+          mode="interactive"> 
+        </kaltura-player>
+      </div>
+
+    </div>
+  </section>
+</div>
