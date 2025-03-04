@@ -2,6 +2,9 @@
 
 This repository demonstrates how to embed the Kaltura Player as a custom OracleJET composite component. It shows an end-to-end example of integrating the Kaltura Player into an OracleJET application using RequireJS for module loading and preact for JSX support. The example covers component registration, dynamic external script loading, custom event handling, and integration with OracleJET views and routing.
 
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/ca589689-1b29-4de0-be37-f3b01a34fd86" />
+
+
 ---
 
 ## Table of Contents
